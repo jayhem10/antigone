@@ -25,3 +25,35 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+
+@keyframes scroll {
+	0% {
+		transform: translateY(0);
+	}
+	30% {
+		transform: translateY(100px);
+	}
+}
+
+svg #wheel {
+	animation: scroll ease 1.5s infinite;
+}
+
+.line:before,
+.line:after {
+  flex: 1;
+  content: '';
+  height: 1px;
+  background: white;
+  width: 10px;
+
+}
+
+#menu{
+  --menu-color: #f64e47;
+}
+
+#custom-cursor{
+  --mouse-color: #f64e47;
+}
