@@ -57,3 +57,42 @@ svg #wheel {
 #custom-cursor{
   --mouse-color: #f64e47;
 }
+
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.heart {
+  animation: heartbeat 1s infinite linear;
+}
+
+@keyframes heartbeat {
+  0% {
+    transform: scale(0.75);
+    opacity: 0.2;
+  }
+  20% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  40% {
+    transform: scale(0.75);
+    opacity: 0.2;
+  }
+  60% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  80% {
+    transform: scale(0.75);
+    opacity: 0.2;
+  }
+  100% {
+    transform: scale(0.75);
+    opacity: 0.2;
+  }
+}
+ 

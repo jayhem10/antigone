@@ -1,6 +1,5 @@
 'use client'
 
-import Image from 'next/image';
 import React, { useState, useEffect } from 'react';
 import CursorSvg from './svg/CursorSvg';
 
@@ -15,8 +14,7 @@ export const CursorComponent = () => {
             cursorElement.style.left = `${position.x}px`;
             cursorElement.style.top = `${position.y}px`;
         }
-handleScroll()
-
+        handleScroll()
     }, [position]);
 
     useEffect(() => {
